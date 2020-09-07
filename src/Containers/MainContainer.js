@@ -1,11 +1,13 @@
 import React from 'react';
-import Card from '../Components/card'
+import CardContainer from './CardContainer'
+import Banner from '../Components/banner'
 
 export default class MainContainer extends React.Component {
     render(){
         return (
             <div className = "main">
-                <Card />
+                <Banner />
+                <CardContainer />
             </div>
         )
     }
