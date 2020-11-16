@@ -11,7 +11,7 @@ export default class CardContainer extends React.Component {
 
     render() {
         let cardArray = []
-        for (let cardNumber= 0; cardNumber < 11; cardNumber++){
+        for (let cardNumber= 0; cardNumber < 20; cardNumber++){
             cardArray.push(<Card className="cards"/>)
         }
         return (
