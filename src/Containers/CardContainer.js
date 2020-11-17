@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Components/card'
+import Grid from '@material-ui/core/Grid';
 
 export default class CardContainer extends React.Component {
 
@@ -12,13 +13,17 @@ export default class CardContainer extends React.Component {
     render() {
         let cardArray = []
         for (let cardNumber= 0; cardNumber < 10; cardNumber++){
-            cardArray.push(<Card className="cards"/>)
+            cardArray.push(<Card key={cardNumber}/>)
         }
         return (
-        <div className = "card-container">
-            {cardArray}
-
-        </div>
+            <Grid
+            container
+            direction="row"
+            justify="space-evenly"
+            alignItems="flex-start"
+            >
+                {cardArray}
+            </Grid>
         )
     }
 }

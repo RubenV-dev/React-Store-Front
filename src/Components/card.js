@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
 
 export default class Card extends React.Component {
     render() {
@@ -9,9 +10,9 @@ export default class Card extends React.Component {
                 <li>Price: $1 </li>
                 <li>Description: Looks hella Good</li>
             </ul>
-            <button>
+            <Button variant="outlined" color="primary">
                 Buy Now
-            </button>
+            </Button>
         </div>
         )
     }

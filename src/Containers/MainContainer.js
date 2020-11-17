@@ -1,14 +1,15 @@
 import React from 'react';
 import CardContainer from './CardContainer'
 import Banner from '../Components/banner'
+import { Container } from '@material-ui/core';
 
 export default class MainContainer extends React.Component {
     render(){
         return (
-            <div className = "main">
+            <Container maxWidth="lg">
                 <Banner />
                 <CardContainer />
-            </div>
+            </Container>
         )
     }
 }
