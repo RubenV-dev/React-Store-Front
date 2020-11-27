@@ -3,8 +3,7 @@ import React from 'react'
 const Banner = () => {
     return (
         <div className='banner'>
-           Cristians Store Banner!!!!!!!!!!!!!!!!!!!!!!!!!
-            
+           <p>Hand Crafted Custom Designs </p>
         </div>
     )
 }
