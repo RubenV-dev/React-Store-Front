@@ -1,17 +1,15 @@
 import React from 'react';
-import CardContainer from './CardContainer'
-import Banner from '../Components/banner'
 // import { Container } from '@material-ui/core';
-import Product from '../Components/product'
+import { Route, Switch} from 'react-router-dom'
+import Home from '../Components/home'
 
 export default class MainContainer extends React.Component {
     render(){
         return (
             <div className="main-container">
-                <h1 id="store-name">True Decor</h1>
-                <Banner />
-                <CardContainer />
-                <Product />
+               <Switch>
+                    <Route exact path='/' render={() => {return (<Home />)}}/>
+               </Switch>
             </div>
         )
     }

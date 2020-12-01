@@ -21,6 +21,7 @@ export default class CardContainer extends React.Component {
             direction="row"
             justify="space-evenly"
             alignItems="flex-start"
+            style={{marginTop: "50px"}}
             >
                 {cardArray}
             </Grid>
